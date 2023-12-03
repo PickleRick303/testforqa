@@ -1,0 +1,122 @@
+[
+  {
+    "key": "ba414360-c824-439a-9ee0-18b7342690ff",
+    "creationDate": "2023-11-15T19:27:18.0707763Z",
+    "expirationDate": "2024-11-15T19:26:30.861Z",
+    "rules": ["data_autoexport"],
+    "signature": {
+      "value": "MEUCIQDSSc/9WN576l6RNov067GHITYKaTQ/qm+DE71Jcj+ijQIgRwwPxhAyqOyk+8SeF5NpqmwprYXzSciBXTsVLswHi1k=",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7m5O0sWXapV7uNPX3SM2t5GIJ/Ijy7oCrJySuxdGhCqqgI+Afn4J5ltKzIqfqW7Fbl0b02nZVcoJkbc9BFTwfQ=="
+    },
+    "supplementaryInformation": {
+      "transmissionDate": "2023-11-15T19:27:18.3412531Z",
+      "publicationDate": null,
+      "activationDate": null,
+      "issuedDate": "2023-11-15T19:27:18.3412521Z",
+      "synchronizeDate": null,
+      "isDeclined": false,
+      "activatedBy": null,
+      "activatedFor": null,
+      "issuedBy": null,
+      "issuedFor": null,
+      "softwareName": null,
+      "licenseNumber": null
+    }
+  },
+  {
+    "key": "e28ac093-4154-4cae-ab70-578587be7936",
+    "creationDate": "2023-11-15T19:27:18.3907684Z",
+    "expirationDate": "2024-11-15T19:26:30.861Z",
+    "rules": ["data_autoexport"],
+    "signature": {
+      "value": "MEQCIBr0UvgAnR9F5FGSmv75bTpJY+mXpUwIYzGs11GStNjOAiB/aG2vkC4kfBjn5qHQdIcNB7Vm+oPYatwyNsJAPPx38g==",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7m5O0sWXapV7uNPX3SM2t5GIJ/Ijy7oCrJySuxdGhCqqgI+Afn4J5ltKzIqfqW7Fbl0b02nZVcoJkbc9BFTwfQ=="
+    },
+    "supplementaryInformation": {
+      "transmissionDate": "2023-11-15T19:27:18.4895554Z",
+      "publicationDate": null,
+      "activationDate": null,
+      "issuedDate": "2023-11-15T19:27:18.4895544Z",
+      "synchronizeDate": null,
+      "isDeclined": false,
+      "activatedBy": null,
+      "activatedFor": null,
+      "issuedBy": null,
+      "issuedFor": null,
+      "softwareName": null,
+      "licenseNumber": null
+    }
+  },
+  {
+    "key": "ef0faebe-e4fe-48bb-a11d-d68358e5d6cc",
+    "creationDate": "2023-11-15T19:27:18.4975612Z",
+    "expirationDate": "2024-11-15T19:26:30.861Z",
+    "rules": ["data_autoexport"],
+    "signature": {
+      "value": "MEUCIQCtAkl0KVXT5SI0XfFoOqVb5KkmYBrcRMVE/gKf83ccVAIgIcnriktnMxHVGRwxX45ijdxtIwaC1CAUTPTSnWO8IyY=",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7m5O0sWXapV7uNPX3SM2t5GIJ/Ijy7oCrJySuxdGhCqqgI+Afn4J5ltKzIqfqW7Fbl0b02nZVcoJkbc9BFTwfQ=="
+    },
+    "supplementaryInformation": {
+      "transmissionDate": "2023-11-15T19:27:18.5171762Z",
+      "publicationDate": null,
+      "activationDate": null,
+      "issuedDate": "2023-11-15T19:27:18.5171754Z",
+      "synchronizeDate": null,
+      "isDeclined": false,
+      "activatedBy": null,
+      "activatedFor": null,
+      "issuedBy": null,
+      "issuedFor": null,
+      "softwareName": null,
+      "licenseNumber": null
+    }
+  },
+  {
+    "key": "bee64531-774f-4c74-bc9e-d789b86b9b75",
+    "creationDate": "2023-11-15T19:27:18.5247207Z",
+    "expirationDate": "2024-11-15T19:26:30.861Z",
+    "rules": ["data_autoexport"],
+    "signature": {
+      "value": "MEYCIQCzzX3Ln9UtAbRvXf3R1DpEEik+xZ1loTdoJVfxeFI3DgIhAJDczMykC26EtK2s8HPhwfDjV/21I/BdMx3b9Ryv5Iel",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7m5O0sWXapV7uNPX3SM2t5GIJ/Ijy7oCrJySuxdGhCqqgI+Afn4J5ltKzIqfqW7Fbl0b02nZVcoJkbc9BFTwfQ=="
+    },
+    "supplementaryInformation": {
+      "transmissionDate": "2023-11-15T19:27:18.5537172Z",
+      "publicationDate": null,
+      "activationDate": null,
+      "issuedDate": "2023-11-15T19:27:18.5537164Z",
+      "synchronizeDate": null,
+      "isDeclined": false,
+      "activatedBy": null,
+      "activatedFor": null,
+      "issuedBy": null,
+      "issuedFor": null,
+      "softwareName": null,
+      "licenseNumber": null
+    }
+  },
+  {
+    "key": "1bd049df-4163-4446-85f3-a5f049539bf0",
+    "creationDate": "2023-11-15T19:27:18.562263Z",
+    "expirationDate": "2024-11-15T19:26:30.861Z",
+    "rules": ["data_autoexport"],
+    "signature": {
+      "value": "MEYCIQCLEL4iwmEPSyNi4wLq5DjjEleYJKmidAxNfjG/SWISdAIhAIumm01tqBSf8cTF21eDYWmufJSqmk4k4XfHp+/ZKPtf",
+      "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7m5O0sWXapV7uNPX3SM2t5GIJ/Ijy7oCrJySuxdGhCqqgI+Afn4J5ltKzIqfqW7Fbl0b02nZVcoJkbc9BFTwfQ=="
+    },
+    "supplementaryInformation": {
+      "transmissionDate": "2023-11-15T19:27:18.5812807Z",
+      "publicationDate": null,
+      "activationDate": null,
+      "issuedDate": "2023-11-15T19:27:18.5812799Z",
+      "synchronizeDate": null,
+      "isDeclined": false,
+      "activatedBy": null,
+      "activatedFor": null,
+      "issuedBy": null,
+      "issuedFor": null,
+      "softwareName": null,
+      "licenseNumber": null
+    }
+  }
+]

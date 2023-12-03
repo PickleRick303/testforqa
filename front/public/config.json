@@ -1,0 +1,17 @@
+{
+  "usergateway": "https://usergateway.rdl.solutions",
+  "targetgateway": "https://targetgateway.rdl.solutions",
+  "requisitiongateway": "https://requisitiongateway.rdl.solutions",
+  "sessiongateway": "https://rmosessionsgateway.rdl.solutions",
+  "version": "1.0",
+  "usergatewayversion": "1.0",
+  "requisitionversion": "2.0",
+  "type": "rs3mc",
+  "auth": {
+    "authority": "https://identityserver.rdl.solutions",
+    "client_id": "rma.spa",
+    "response_type": "id_token token",
+    "scope": "openid usergateway rmosessionsgateway requisitiongateway targetgateway profile"
+  },
+  "lang": "ua"
+}

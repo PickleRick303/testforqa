@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>РМА</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      // window.ENV = {
+      //   usergateway: "https://usergateway.rdl.solutions",
+      //   targetgateway: "https://targetgateway.rdl.solutions",
+      //   requisitiongateway: "https://requisitiongateway.rdl.solutions",
+      //   sessiongateway: "https://rmosessionsgateway.rdl.solutions",
+      //   version: "1.0",
+      //   usergatewayversion: "1.0",
+      //   requisitionversion: "2.0",
+      //   type: "rs3mc",
+      //   auth: {
+      //     authority: "https://identityserver.rdl.solutions",
+      //     client_id: "rma.spa",
+      //     response_type: "id_token token",
+      //     scope: "openid usergateway rmosessionsgateway requisitiongateway targetgateway profile",
+      //   },
+      //   lang: "ua",
+      // };
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "/config.json", false);
+      xhr.setRequestHeader("cache-control", "no-cache, must-revalidate, post-check=0, pre-check=0");
+      xhr.setRequestHeader("cache-control", "max-age=0");
+      xhr.setRequestHeader("expires", "0");
+      xhr.setRequestHeader("expires", "Tue, 01 Jan 1980 1:00:00 GMT");
+      xhr.setRequestHeader("pragma", "no-cache");
+      xhr.onload = function (e) {
+        console.log("e", e);
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            const {
+              currentTarget: { response },
+            } = e;
+            const data = JSON.parse(response);
+            console.log("data", data);
+            window.ENV = data;
+            console.log("window.ENV", window.ENV);
+          } else {
+            console.error(xhr.statusText);
+          }
+        }
+      };
+      xhr.onerror = function (e) {
+        console.error(xhr.statusText);
+      };
+      xhr.send(null);
+    </script>
+    <div id="root"></div>
+    <script type="module" src="./../src/index.js"></script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

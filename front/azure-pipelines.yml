@@ -1,0 +1,56 @@
+parameters:
+- name: microservice
+  type: string
+  default: mcfrontendrma
+- name: env
+  type: string
+  default: dev
+  values:
+    - dev
+    - ps3mc
+    - rs3mc
+    - vk3mc
+- name: build
+  type: boolean
+  default: true
+- name: deploy
+  type: boolean
+  default: true
+- name: force_export_image
+  type: boolean
+  default: false
+- name: force_export_k8s
+  type: boolean
+  default: false
+- name: use_config_map
+  type: boolean
+  default: false
+  
+
+resources:
+  repositories:
+  - repository: CI
+    type: git
+    name: CI/CI
+    ref: rmo-newversion
+
+trigger:
+ branches:
+  include:
+    - refs/heads/*
+    - refs/tags/*
+
+pool: 'docker'
+workspace:
+    clean: all
+
+steps:
+- template: azure-devops-templates/vnext-mc/deploy.yml@CI
+  parameters:
+    microservice: ${{ parameters.microservice }}
+    env: ${{ parameters.env }}
+    build: ${{ parameters.build }}
+    deploy: ${{ parameters.deploy }}
+    force_export_image: ${{ parameters.force_export_image }}
+    force_export_k8s: ${{ parameters.force_export_k8s }}
+    use_config_map: ${{ parameters.use_config_map }}
