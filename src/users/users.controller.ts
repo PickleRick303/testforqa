@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Put, Body, Query } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Body,
+  Query,
+  Delete,
+} from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './create-user.dto';
 import { EditUserDto } from './edit-user.dto';
@@ -13,11 +21,8 @@ export class UsersController {
   @ApiOperation({ summary: 'Get users' })
   @ApiQuery({ name: 'login', required: false })
   @ApiQuery({ name: 'email', required: false })
-  findAll(
-    @Query('login') login?: string,
-    @Query('email') email?: string,
-  ): any[] {
-    return this.usersService.findUsersByParams(login, email);
+  findAll(@Query('login') login?: string): any[] {
+    return this.usersService.findUsersByParams(login);
   }
   @Get(':id')
   @ApiOperation({ summary: 'Get user by id' })
@@ -32,5 +37,9 @@ export class UsersController {
   @Put()
   update(@Body() EditUserDto: EditUserDto) {
     return this.usersService.updateUser(EditUserDto);
+  }
+  @Delete()
+  delete(@Query('id') id: number) {
+    return this.usersService.deleteUser(id);
   }
 }

@@ -66,6 +66,7 @@ export class AppController {
   }
 
   @Delete(':id')
+  @ApiOperation({ summary: 'Delete user by id' })
   deleteItem() {
     // логіка для видалення елементу
   }
